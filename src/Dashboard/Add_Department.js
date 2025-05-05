@@ -10,7 +10,7 @@ const AddDepartment = () => {
         e.preventDefault();
         try {
             const auth_token = localStorage.getItem("token");
-            await axios.post("http://localhost:8000/api/department/",
+            await axios.post("https://thomas0305.pythonanywhere.com/api/department/",
                 {
                     DepartmentName: deptName
                 },
