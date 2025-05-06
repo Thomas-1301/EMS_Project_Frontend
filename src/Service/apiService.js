@@ -1,7 +1,7 @@
 import axios from "axios"
 
 // Set the base URL for your API
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = "https://thomas0305.pythonanywhere.com/api";
 
 //Function to log in the user
 export const loginUser = (credentials) => {
