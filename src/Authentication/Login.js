@@ -13,7 +13,7 @@ const Login = () => {
         e.preventDefault(); //this stops the default behavior, so the page does not refresh
         try {
             //axios.post(url,data) is used to send data to backend 
-            const response = await axios.post('http://localhost:8000/api/login/', {
+            const response = await axios.post('https://thomas0305.pythonanywhere.com/api/login/', {
                 username,
                 password,
             });

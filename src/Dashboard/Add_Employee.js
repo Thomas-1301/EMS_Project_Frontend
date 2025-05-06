@@ -16,7 +16,10 @@ const AddEmployee = () => {
     useEffect(() => {
         const fetchDepartments = async () => {
             try {
-                const response = await axios.get("https://thomas0305.pythonanywhere.com/api/department/");
+                const token = localStorage.getItem("token");
+                const response = await axios.get("https://thomas0305.pythonanywhere.com/api/department/",
+                    { headers: { Authorization: `Token ${token}` } }
+                );
                 setDepartments(response.data)
             }
             catch (error) {
